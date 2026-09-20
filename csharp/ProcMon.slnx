@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ProcMon/ProcMon.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ProcMon.Tests/ProcMon.Tests.csproj" />
+  </Folder>
+</Solution>
