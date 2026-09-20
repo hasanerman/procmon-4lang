@@ -1,5 +1,7 @@
 # procmon-4lang - Cross-Platform Process and Resource Monitor
 
+[![build](https://github.com/hasanerman/procmon-4lang/actions/workflows/build.yml/badge.svg)](https://github.com/hasanerman/procmon-4lang/actions/workflows/build.yml)
+
 The same process monitor, written four times: in C, C++, Rust and C#. All four implement the same command line contract, print the same table and pass the same tests. Then the difference between them is measured.
 
 Status: all four languages are complete, they build, their tests pass and the benchmarks have been taken.
@@ -49,13 +51,14 @@ toplam 235 surec (filtre: c), gosterilen 2
 
 ## File count and layout
 
-51 files in total: 1 document, 1 benchmark script, 1 build-all script, 3 repository files and 45 source files (C 13, C++ 14, Rust 10, C# 8).
+52 files in total: 1 document, 1 benchmark script, 1 build-all script, 1 CI workflow, 3 repository files and 45 source files (C 13, C++ 14, Rust 10, C# 8).
 
 ```
 procmon-4lang/
   README.md
   bench.ps1                  (PowerShell script that benchmarks all four binaries)
   buildeverything.bat        (builds and tests all four languages with one command)
+  .github/workflows/build.yml (CI: builds and tests all four languages on Windows and Linux)
   LICENSE
   .gitignore
   .gitattributes
